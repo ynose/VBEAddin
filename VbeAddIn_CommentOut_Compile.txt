@@ -1,0 +1,11 @@
+1. コンパイル
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /target:library /out:"D:\nose\VBEAddin\VbeAddIn_CommentOut.dll" "D:\nose\VBEAddin\VbeAddIn_CommentOut.cs" /reference:"C:\Windows\assembly\GAC\Extensibility\7.0.3300.0__b03f5f7f11d50a3a\extensibility.dll" /reference:"C:\Windows\assembly\GAC_MSIL\office\14.0.0.0__71e9bce111e9429c\OFFICE.DLL" /reference:"C:\Windows\assembly\GAC_MSIL\Microsoft.Vbe.Interop\14.0.0.0__71e9bce111e9429c\Microsoft.Vbe.Interop.dll"
+
+2. DLLをレジストリ登録
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe" "D:\nose\VBEAddin\VbeAddIn_CommentOut.dll" /tlb /codebase
+
+3. アドインをレジストリ登録
+VbeAddIn_CommentOut.reg を実行
+
+4. Excelを起動しVBEを開くとメニューバーにCommentコマンドが追加されている。
+
