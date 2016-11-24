@@ -1,5 +1,11 @@
 1. コンパイル
+
+＜C#の場合＞
 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" /target:library /out:"D:\nose\VBEAddin\VbeAddIn_CommentOut.dll" "D:\nose\VBEAddin\VbeAddIn_CommentOut.cs" /reference:"C:\Windows\assembly\GAC\Extensibility\7.0.3300.0__b03f5f7f11d50a3a\extensibility.dll" /reference:"C:\Windows\assembly\GAC_MSIL\office\14.0.0.0__71e9bce111e9429c\OFFICE.DLL" /reference:"C:\Windows\assembly\GAC_MSIL\Microsoft.Vbe.Interop\14.0.0.0__71e9bce111e9429c\Microsoft.Vbe.Interop.dll"
+
+＜VBの場合＞
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\vbc.exe" /target:library /out:"D:\nose\VBEAddin\VbeAddIn_CommentOut.dll" "D:\nose\VBEAddin\VbeAddIn_CommentOut.vb" /reference:"C:\Windows\assembly\GAC\Extensibility\7.0.3300.0__b03f5f7f11d50a3a\extensibility.dll" /reference:"C:\Windows\assembly\GAC_MSIL\office\14.0.0.0__71e9bce111e9429c\OFFICE.DLL" /reference:"C:\Windows\assembly\GAC_MSIL\Microsoft.Vbe.Interop\14.0.0.0__71e9bce111e9429c\Microsoft.Vbe.Interop.dll"
+
 
 2. DLLをレジストリ登録
 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe" "D:\nose\VBEAddin\VbeAddIn_CommentOut.dll" /tlb /codebase
